@@ -7,7 +7,9 @@ public class ByteStreamDemo1 {
     public static void main(String[] args) throws IOException {
 
         FileOutputStream fos = new FileOutputStream("myio\\a.txt");
-        fos.write(97);
+        String str = "nishiwuyanzuma";
+        byte[] bytes = str.getBytes();
+        fos.write(bytes);
         fos.close();
     }
 }
